@@ -31,16 +31,16 @@ img {
 
 .flex {
   display: flex;
-  gap: clamp(4rem, 4.5vw, 5rem);
+  gap: clamp(3rem, 3.5vw, 4rem);
 }
 h1 {
-  font-size: clamp(3.2rem, 3.4vw, 5.5rem);
+  font-size: clamp(3.2rem, 4.5vw, 6rem);
   letter-spacing: 1px;
+  color: var(--Dark-Slate-Grey);
 }
 h1,
 p,
 a {
-  color: var(--Dark-Slate-Grey);
   line-height: 1.6;
 }
 p,
@@ -59,6 +59,11 @@ label,
 button {
   font-weight: 800;
 }
+label,
+a,
+input {
+  color: var(--Charcoal-Grey);
+}
 .hidden {
   display: none;
 }
@@ -70,7 +75,7 @@ body {
   min-height: 100vh;
 }
 .sign-up-sec {
-  width: clamp(30rem, 90%, 90rem);
+  width: clamp(30rem, 90%, 100rem);
   align-items: stretch;
   justify-content: stretch;
   margin-inline: auto;
@@ -98,7 +103,7 @@ form {
 }
 label,
 small {
-  font-size: 1.2rem;
+  font-size: clamp(1.2rem, 1.3vw, 1.4rem);
 }
 label {
   display: block;
@@ -175,7 +180,7 @@ button:hover {
     display: flex;
     align-items: center;
     justify-content: center;
-    background-color: var(--Dark-Slate-Grey);
+    background-color: var(--Charcoal-Grey);
   }
   .sign-up-sec,
   .success-sec {
