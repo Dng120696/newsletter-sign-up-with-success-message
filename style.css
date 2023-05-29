@@ -34,7 +34,8 @@ img {
   gap: clamp(4rem, 4.5vw, 5rem);
 }
 h1 {
-  font-size: clamp(3.2rem, 3.4vw, 3.6rem);
+  font-size: clamp(3.2rem, 3.4vw, 5.5rem);
+  letter-spacing: 1px;
 }
 h1,
 p,
@@ -69,7 +70,7 @@ body {
   min-height: 100vh;
 }
 .sign-up-sec {
-  width: clamp(30rem, 90%, 100rem);
+  width: clamp(30rem, 90%, 90rem);
   align-items: stretch;
   justify-content: stretch;
   margin-inline: auto;
@@ -200,13 +201,13 @@ button:hover {
     padding: 0;
     padding-left: 3rem;
   }
- 
+
   .content-sec {
     align-self: center;
   }
   .success-sec {
     padding: 3rem 3rem 1rem;
-    width: clamp(35rem,38vw,40rem);
+    width: clamp(35rem, 38vw, 40rem);
     min-height: 0;
   }
   .btn-dismiss {
