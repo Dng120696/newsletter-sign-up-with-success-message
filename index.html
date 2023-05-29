@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./assets/images/favicon-32x32.png">
+  <link rel="stylesheet" href="style.css">
+  <title>Frontend Mentor | Newsletter sign-up form with success message</title>
+
+</head>
+<body>
+  <!-- Sign-up form start -->
+  <section class="sign-up-sec flex">
+    <!-- content section -->
+    <section class="content-sec">
+      <h1 class="content-title">
+        Stay updated!
+      </h1>
+      <p class="content-info">
+        Join 60,000+ product managers receiving monthly updates on:
+      </p>
+      <ul class="flex">
+        <li><img src="./assets/images/icon-list.svg" alt="">
+        </li>
+        <li><a href="#">
+          Product discovery and building what matters
+        </a></li>
+      </ul>
+      <ul class="flex">
+        <li><img src="./assets/images/icon-list.svg" alt="">
+        </li>
+        <li><a href="#">
+          Measuring to ensure updates are a success
+
+        </a></li>
+      </ul>
+      <ul class="flex">
+        <li><img src="./assets/images/icon-list.svg" alt="">
+        </li>
+        <li><a href="#">
+          And much more!
+        </a></li>
+      </ul>    
+      <form id="form"> 
+        <label for="email-input">
+           Email address
+        </label>
+        <div class="input-box">
+          <input type="email" id="email-input" name="email" placeholder="email@company.com">
+          <small class="error-message"></small>
+        </div>
+        <button type="submit" class="btn-submit">
+          Subscribe to monthly newsletter
+        </button>
+      </form>
+    </section>
+    <section class="image-sec">
+      <img src="./assets/images/illustration-sign-up-mobile.svg" alt="mobile" class="mobile-img">
+      <img src="./assets/images/illustration-sign-up-desktop.svg" alt="mobile" class="desktop-img">
+    </section>
+  <!-- Sign-up form end -->
+  </section>
+    <section class="success-sec flex hidden">
+    <!-- Success message start -->
+    <div>
+      <div class="success-logo">
+        <img src="./assets/images/icon-success.svg" alt="success">
+      </div>
+      <h1 class="success-title">
+        Thanks for subscribing!
+      </h1>
+      <p>
+        A confirmation email has been sent to <span class="email-val">
+        </span>
+        Please open it and click the button inside to confirm your subscription.
+      </p>
+    </div>
+    <button class="btn-dismiss">
+      Dismiss message
+    </button>
+  <!-- Success message end -->
+    </section>
+<script src="./script.js"></script>
+</body>
+</html>
